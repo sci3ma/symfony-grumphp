@@ -1,0 +1,8 @@
+vendor/
+composer.lock
+.idea
+.php_cs.cache
+grumphp.yml
+php_cs.php
+phpstan.neon
+phpunit.xml
