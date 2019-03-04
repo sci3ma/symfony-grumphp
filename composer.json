@@ -34,6 +34,14 @@
             "MH\\": "src/"
         }
     },
+    "scripts": {
+        "post-install-cmd": [
+            "MH\\Composer\\Scripts::move"
+        ],
+        "post-update-cmd": [
+            "MH\\Composer\\Scripts::move"
+        ]
+    },
     "support": {
         "issues": "https://github.com/sci3ma/sf4grumphp/issues"
     },
