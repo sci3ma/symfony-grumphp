@@ -1,7 +1,7 @@
 SF4GrumPHP
 ==========
 
-Configured GrumPHP with bunch of tools for static code analysis Symfony Framework v4.
+Configured GrumPHP with bunch of tools for static code analysis of Symfony Framework 4.* projects.
 
 Included tools
 --------------
@@ -19,13 +19,18 @@ Included tools
 * PHPUnit: `phpunit/phpunit`
 * SensioLabs Security Checker: `sensiolabs/security-checker`
 
-Instalation
+Install
 -----------
+Download package:
 ```
 composer require --dev sci3ma/sf4grumphp
 ```
+Create/update configuration files:
+```
+./vendor/bin/sf4grumphp install
+```
 
-Configuration
+Configure
 -------------
 Enable GrumPHP:
 ```
@@ -37,9 +42,20 @@ Disable GrumPHP:
 ```
 More configuration [here][1].
 
+Uninstall
+---------
+Remove configuration files:
+```
+./vendor/bin/sf4grumph uninstall
+```
+Remove package:
+```
+composer remove sci3ma/sf4grumphp uninstall
+```
+
 Force run
 ---------
-Run the tests without commit:
+Run tests without commit:
 ```
 ./vendor/bin/grump run
 ```
