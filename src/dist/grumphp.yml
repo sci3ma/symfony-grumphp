@@ -15,7 +15,8 @@ parameters:
                 - "dump("
             regexp_type: G
             whitelist_patterns:
-                - /^/public\/(.*)/
+                - /^public\/(.*)/
+                - /^vendor\/(.*)/
         phpcpd:
             directory: '.'
             exclude: ['vendor', 'public', 'var', 'config', 'bin', 'translations']

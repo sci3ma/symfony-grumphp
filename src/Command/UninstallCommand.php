@@ -10,7 +10,7 @@ use Symfony\Component\Filesystem\Filesystem;
 /**
  * @author Marcin Harasim <marcin.harasim@gmail.com>
  */
-class UninstallCommand extends AbstractCommand
+final class UninstallCommand extends AbstractCommand
 {
     /**
      * {@inheritdoc}

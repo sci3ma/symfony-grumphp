@@ -1,7 +1,7 @@
 SF4GrumPHP
 ==========
 
-Configured GrumPHP with bunch of tools for static code analysis of Symfony Framework 4.* projects.
+Configured GrumPHP with bunch of tools for static code analysis (PSR + symfony standards) of Symfony Framework 4.* projects.
 
 Included tools
 --------------
@@ -50,7 +50,7 @@ Remove configuration files:
 ```
 Remove package:
 ```
-composer remove sci3ma/sf4grumphp uninstall
+composer remove sci3ma/sf4grumphp
 ```
 
 Force run

@@ -2,7 +2,11 @@ vendor/
 composer.lock
 .idea
 .php_cs.cache
-grumphp.yml*
-php_cs.php*
-phpstan.neon*
-phpunit.xml*
+/grumphp.yml
+/grumphp.yml.scbak
+/php_cs.php
+/php_cs.php.scbak
+/phpstan.neon
+/phpstan.neon.scbak
+/phpunit.xml
+/phpunit.xml.scbak
