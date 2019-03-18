@@ -30,7 +30,7 @@ if (!$loaded) {
     exit(1);
 }
 
-$application = new Application('configure');
+$application = new Application();
 $application->add(new InstallCommand());
 $application->add(new UninstallCommand());
 

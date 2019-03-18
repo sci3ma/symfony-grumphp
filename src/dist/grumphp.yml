@@ -2,7 +2,7 @@
 parameters:
     git_dir: .
     bin_dir: vendor/bin
-    stop_on_failure: true
+    stop_on_failure: false
     process_timeout: 120
     # https://github.com/phpro/grumphp/blob/master/doc/tasks.md
     tasks:
@@ -22,7 +22,7 @@ parameters:
             exclude: ['vendor', 'public', 'var', 'config', 'bin', 'translations']
             names_exclude: []
             fuzzy: false
-            min_lines: 4
+            min_lines: 5
             min_tokens: 50
         phpcsfixer2:
             rules:
