@@ -19,7 +19,7 @@ parameters:
                 - /^vendor\/(.*)/
         phpcpd:
             directory: '.'
-            exclude: ['vendor', 'public', 'var', 'config', 'bin', 'translations']
+            exclude: ['vendor', 'public', 'var', 'config', 'bin', 'translations', 'src/Migrations']
             names_exclude: []
             fuzzy: false
             min_lines: 5
@@ -34,11 +34,11 @@ parameters:
         phplint:
             triggered_by: ['php', 'phtml', 'php3', 'php4', 'php5', 'twig']
         phpmd:
-            exclude: ['tests', 'config', 'var']
+            exclude: ['tests', 'config', 'var', 'src/Migrations']
             ruleset: ['cleancode', 'codesize', 'design', 'controversial', 'unusedcode']
         phpmnd:
             directory: 'src/'
-            exclude: ['tests', 'config', 'var', 'translations']
+            exclude: ['tests', 'config', 'var', 'translations', 'src/Migrations']
             extensions: ['all']
             hint: true
             strings: false
