@@ -57,7 +57,7 @@ Force run
 ---------
 Run tests without commit:
 ```
-./vendor/bin/grump run
+./vendor/bin/grumphp run
 ```
 
 [1]: https://github.com/phpro/grumphp/blob/master/doc/commands.md#installation
