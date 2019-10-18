@@ -16,7 +16,7 @@ Included tools
     * Doctrine extension: `phpstan/phpstan-doctrine`
     * PHPUnit extension: `phpstan/phpstan-phpunit`
     * Symfony Framework extension`phpstan/phpstan-symfony`
-* PHPUnit: `phpunit/phpunit`
+* PHPUnit Bridge: `symfony/phpunit-bridge`
 * SensioLabs Security Checker: `sensiolabs/security-checker`
 
 Install

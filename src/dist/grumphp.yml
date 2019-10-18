@@ -46,7 +46,7 @@ parameters:
         phpstan:
             configuration: phpstan.neon
             level: 7
-        phpunit:
+        phpunitbridge:
             config_file: phpunit.xml
             testsuite: Application
             always_execute: true
@@ -61,15 +61,15 @@ parameters:
         security:
             tasks:
                 - securitychecker
-        phpunit:
+        phpunitbridge:
             tasks:
-                - phpunit
+                - phpunitbridge
         phpcsmd:
             tasks:
                 - phpcsfixer2
                 - phpmd
                 - phpmnd
-        no-phpunit:
+        no-phpunitbridge:
             tasks:
                 - git_blacklist
                 - phpcpd
@@ -79,6 +79,7 @@ parameters:
                 - phpmnd
                 - phpstan
                 - securitychecker
+                - doctrine_orm
         phpcsfixer:
             tasks:
                 - phpcsfixer2
