@@ -13,6 +13,7 @@ parameters:
                 - "exit;"
                 - "echo "
                 - "dump("
+                - "dd("
             regexp_type: G
             whitelist_patterns:
                 - /^public\/(.*)/
@@ -38,7 +39,7 @@ parameters:
             ruleset: ['cleancode', 'codesize', 'design', 'controversial', 'unusedcode']
         phpmnd:
             directory: 'src/'
-            exclude: ['tests', 'config', 'var', 'translations', 'src/Migrations']
+            exclude: ['tests', 'config', 'var', 'translations', 'src/Migrations', 'src/DataFixtures']
             extensions: ['all']
             hint: true
             strings: false
