@@ -54,6 +54,8 @@ parameters:
             lockfile: composer.lock
             timeout: 30
             run_always: false
+        doctrine_orm:
+            triggered_by: ['php', 'xml', 'yml']
     # https://github.com/phpro/grumphp/blob/master/doc/testsuites.md
     testsuites:
         security:
