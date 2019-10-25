@@ -1,9 +1,14 @@
 <?php
 
-namespace MH\Command;
+declare(strict_types=1);
+
+namespace MH\SymfonyGrumPHP\Command;
 
 use Symfony\Component\Console\Command\Command;
 
+/**
+ * @author Marcin Harasim <marcin.harasim@gmail.com>
+ */
 abstract class AbstractCommand extends Command
 {
     /**
@@ -14,6 +19,7 @@ abstract class AbstractCommand extends Command
         'php_cs.php',
         'phpstan.neon',
         'phpunit.xml',
+        'config/cli-config.php'
     ];
 
     /**

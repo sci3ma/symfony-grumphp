@@ -1,8 +1,8 @@
 #!/usr/bin/env php
 <?php
 
-use MH\Command\InstallCommand;
-use MH\Command\UninstallCommand;
+use MH\SymfonyGrumPHP\Command\InstallCommand;
+use MH\SymfonyGrumPHP\Command\UninstallCommand;
 use Symfony\Component\Console\Application;
 
 $autoloadLocations = [
