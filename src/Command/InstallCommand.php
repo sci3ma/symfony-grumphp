@@ -25,7 +25,7 @@ final class InstallCommand extends AbstractCommand
     protected function configure()
     {
         $this
-            ->setDescription('Create configuration files of SF4GrumPHP')
+            ->setDescription('Create configuration files of SymfonyGrumPHP')
             ->setHelp('The <info>install</info> command moves preconfigured files to root folder of a project.');
     }
 

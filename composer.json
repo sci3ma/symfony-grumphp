@@ -1,7 +1,7 @@
 {
-    "name": "sci3ma/sf4grumphp",
-    "description": "Configured GrumPHP with bunch of tools for static code analysis Symfony Framework v4.",
-    "keywords": ["php", "symfony", "grumphp", "phpcs", "phpmd", "phpstan", "phpunit"],
+    "name": "sci3ma/symfony-grumphp",
+    "description": "Configured GrumPHP with bunch of tools for static code analysis Symfony Framework",
+    "keywords": ["php", "symfony", "grumphp", "phpcs", "phpmd", "phpstan", "phpunit", "code quality", "standards"],
     "license": "MIT",
     "authors": [
         {
@@ -36,11 +36,11 @@
         }
     },
     "support": {
-        "issues": "https://github.com/sci3ma/sf4grumphp/issues"
+        "issues": "https://github.com/sci3ma/symfony-grumphp/issues"
     },
-    "homepage": "https://github.com/sci3ma/sf4grumphp",
+    "homepage": "https://github.com/sci3ma/symfony-grumphp",
     "config": {
         "sort-packages": true
     },
-    "bin": ["bin/sf4grumphp"]
+    "bin": ["bin/symfony-grumphp"]
 }

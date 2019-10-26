@@ -25,7 +25,7 @@ final class UninstallCommand extends AbstractCommand
     protected function configure()
     {
         $this
-            ->setDescription('Remove configuration files of SF4GrumPHP')
+            ->setDescription('Remove configuration files of SymfonyGrumPHP')
             ->setHelp('The <info>uninstall</info> command removes preconfigured files from root folder of a project.');
     }
 
