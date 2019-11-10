@@ -21,7 +21,7 @@ install:
 
 script:
     - bin/symfony-grumphp install -q
-    - head -n -39 grumphp.yml > grumphp.tmp && mv grumphp.tmp grumphp.yml
+    - head -n -43 grumphp.yml > grumphp.tmp && mv grumphp.tmp grumphp.yml
     - vendor/bin/grumphp run
     - bin/symfony-grumphp install -q
     - bin/symfony-grumphp uninstall -q
