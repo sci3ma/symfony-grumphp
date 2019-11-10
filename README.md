@@ -6,6 +6,7 @@ Symfony + GrumPHP
 ![GitHub](https://img.shields.io/github/license/sci3ma/symfony-grumphp?style=flat-square)
 ![Packagist (custom server)](https://img.shields.io/packagist/dt/sci3ma/symfony-grumphp?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/sci3ma/symfony-grumphp?style=flat-square)
+![Travis (.org)](https://img.shields.io/travis/sci3ma/symfony-grumphp?style=flat-square)
 
 Included tools
 --------------
