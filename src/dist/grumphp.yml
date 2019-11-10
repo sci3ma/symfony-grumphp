@@ -27,8 +27,12 @@ parameters:
             min_tokens: 50
         phpcsfixer2:
             rules:
-                - '@@PSR2'
-                - '@@Symfony'
+                - '@@PhpCsFixer'
+                - -multiline_whitespace_before_semicolons
+                - -php_unit_internal_class
+                - -php_unit_test_class_requires_covers
+                - -no_superfluous_phpdoc_tags
+                - '@@DoctrineAnnotation'
             verbose: true
             diff: true
             config: php_cs.php
@@ -36,7 +40,7 @@ parameters:
             triggered_by: ['php', 'phtml', 'php3', 'php4', 'php5', 'twig']
         phpmd:
             exclude: ['tests', 'config', 'var', 'src/Migrations']
-            ruleset: ['cleancode', 'codesize', 'design', 'controversial', 'unusedcode']
+            ruleset: ['cleancode', 'codesize', 'controversial', 'design', 'unusedcode']
         phpmnd:
             directory: 'src/'
             exclude: ['tests', 'config', 'var', 'translations', 'src/Migrations', 'src/DataFixtures']
@@ -47,7 +51,7 @@ parameters:
             configuration: phpstan.neon
             level: 7
         phpunitbridge:
-            config_file: phpunit.xml
+            config_file: phpunit.xml.dist
             testsuite: Application
             always_execute: true
         securitychecker:

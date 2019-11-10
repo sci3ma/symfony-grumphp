@@ -18,7 +18,7 @@ abstract class AbstractCommand extends Command
         'grumphp.yml',
         'php_cs.php',
         'phpstan.neon',
-        'phpunit.xml',
+        'phpunit.xml.dist',
         'config/cli-config.php'
     ];
 

@@ -8,5 +8,5 @@ composer.lock
 /php_cs.php.scbak
 /phpstan.neon
 /phpstan.neon.scbak
-/phpunit.xml
+/phpunit.xml.dist
 /phpunit.xml.scbak
