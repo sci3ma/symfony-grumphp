@@ -19,7 +19,9 @@ Included tools
     * [Doctrine extension](https://github.com/phpstan/phpstan-doctrine): `phpstan/phpstan-doctrine`
     * [PHPUnit extension](https://github.com/phpstan/phpstan-phpunit): `phpstan/phpstan-phpunit`
     * [Symfony Framework extension](https://github.com/phpstan/phpstan-symfony): `phpstan/phpstan-symfony`
+    * [TheCodingMachine's additional rules](https://github.com/thecodingmachine/phpstan-strict-rules): `thecodingmachine/phpstan-strict-rules`
 * [PHPUnit Bridge](https://github.com/symfony/phpunit-bridge): `symfony/phpunit-bridge`
+    * With Clover Coverage and percentage code coverage check
 * [SensioLabs Security Checker](https://github.com/sensiolabs/security-checker): `sensiolabs/security-checker`
 
 Requirements
