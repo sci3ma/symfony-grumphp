@@ -10,7 +10,7 @@ env:
         -
 cache:
     directories:
-        - ""$HOME/.composer/cache"
+        - "$HOME/.composer/cache"
 
 before_install:
     - alias composer=composer\ --no-interaction && composer selfupdate
