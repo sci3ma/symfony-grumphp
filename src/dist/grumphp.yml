@@ -50,14 +50,14 @@ parameters:
         phpstan:
             configuration: phpstan.neon
             level: 7
-        phpunitbridge:
-            config_file: phpunit.xml.dist
-            testsuite: Application
-            always_execute: true
         securitychecker:
             lockfile: composer.lock
             timeout: 30
             run_always: false
+        phpunitbridge:
+            config_file: phpunit.xml.dist
+            testsuite: Application
+            always_execute: true
         doctrine_orm:
             triggered_by: ['php', 'xml', 'yml']
         shell:
