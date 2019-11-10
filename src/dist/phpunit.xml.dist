@@ -33,4 +33,16 @@
         <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
         <listener class="Symfony\Bridge\PhpUnit\CoverageListener" />
     </listeners>
+
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./</directory>
+            <exclude>
+                <directory>./tests</directory>
+                <directory>./vendor</directory>
+                <directory>./public</directory>
+                <directory>./config</directory>
+            </exclude>
+        </whitelist>
+    </filter>
 </phpunit>

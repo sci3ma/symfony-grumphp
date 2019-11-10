@@ -10,3 +10,4 @@ composer.lock
 /phpstan.neon.scbak
 /phpunit.xml.dist
 /phpunit.xml.scbak
+/config/cli-config.php

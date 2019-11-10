@@ -13,6 +13,7 @@
     "require": {
         "php": ">=7.1",
         "composer/composer": "^1.8",
+        "dama/doctrine-test-bundle": "^6.2",
         "friendsofphp/php-cs-fixer": "^2.14",
         "jakub-onderka/php-parallel-lint": "^1.0",
         "phpmd/phpmd": "^2.6",
@@ -26,6 +27,7 @@
         "sensiolabs/security-checker": "^5.0",
         "symfony/console": "^4.0",
         "symfony/filesystem": "^4.0",
+        "symfony/orm-pack": "^1.0",
         "symfony/phpunit-bridge": "^4.3"
     },
     "require-dev": {

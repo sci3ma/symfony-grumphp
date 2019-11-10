@@ -1,0 +1,29 @@
+language: php
+php:
+    - '7.0'
+    - '7.1'
+    - '7.2'
+    - '7.3'
+    - '7.4'
+
+env:
+    matrix:
+        - DEPENDENCIES=--prefer-lowest
+        -
+cache:
+    directories:
+        - ~/.cache/composer
+
+before_install:
+    - alias composer=composer\ --no-interaction && composer selfupdate
+    - composer global require hirak/prestissimo
+
+install:
+    - travis_retry composer update --no-progress --profile --no-scripts --no-suggest $DEPENDENCIES
+
+script:
+    - bin/symfony-grumphp install
+    - head -n -32 grumphp.yml > grumphp.tmp && mv grumphp.tmp grumphp.yml
+    - vendor/bin/grumphp run
+    - bin/symfony-grumphp install -y
+    - bin/symfony-grumphp uninstall
