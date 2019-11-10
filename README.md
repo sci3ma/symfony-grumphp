@@ -74,3 +74,4 @@ You can run tests/checks without commit manually:
 Update notice
 -------------
 This library has been renamed to `sci3ma/symfony-grumphp` since 2019.11.10
+ 
