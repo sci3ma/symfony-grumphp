@@ -12,3 +12,4 @@ phpunit.xml.dist
 phpunit.xml.scbak
 config/cli-config.php
 coverage.sh
+!src/dist/coverage.sh
