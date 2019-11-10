@@ -1,6 +1,6 @@
-SymfonyGrumPHP
+Symfony + GrumPHP
 ==============
-Configured GrumPHP with bunch of tools for static code analysis (PSR + symfony standards) of Symfony Framework 4.* projects.
+`symfony-grumphp` is configured GrumPHP with bunch of tools for static code analysis mainly based on [PSRs](https://www.php-fig.org/psr/) + [Symfony Coding Standards](https://symfony.com/doc/current/contributing/code/standards.html) for Symfony Framework 4 projects.
 
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/sci3ma/symfony-grumphp?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/sci3ma/symfony-grumphp?style=flat-square)
@@ -22,20 +22,25 @@ Included tools
 * [PHPUnit Bridge](https://github.com/symfony/phpunit-bridge): `symfony/phpunit-bridge`
 * [SensioLabs Security Checker](https://github.com/sensiolabs/security-checker): `sensiolabs/security-checker`
 
+Requirements
+------------
+PHP needs to be a minimum version of PHP 7.0.
+Symfony Framework needs to be a minimum version of Symfony Framework 4.0.
+
 Install
 -------
-Download package:
+To install `symfony-grumphp`, [install Composer](https://getcomposer.org/download/), execute the following command:
 ```
 composer require --dev sci3ma/symfony-grumphp
 ```
-Create/update configuration files:
+and create (or update) configuration files:
 ```
 ./vendor/bin/symfony-grumphp install
 ```
 
 Configure
 ---------
-Enable GrumPHP:
+GrumPHP should be enabled by default but you can also enable GrumPHP yourself:
 ```
 ./vendor/bin/grumphp git:init
 ```
@@ -43,7 +48,7 @@ Disable GrumPHP:
 ```
 ./vendor/bin/grumphp git:deinit
 ```
-You can find more configuration [here](https://github.com/phpro/grumphp/blob/master/doc/commands.md#installation).
+You can find more GrumPHP configuration [here](https://github.com/phpro/grumphp/blob/master/doc/commands.md#installation).
 
 Uninstall
 ---------
@@ -51,18 +56,18 @@ Remove configuration files:
 ```
 ./vendor/bin/symfony-grumphp uninstall
 ```
-Remove package:
+Then remove package:
 ```
 composer remove sci3ma/symfony-grumphp
 ```
 
 Force run
 ---------
-Run tests without commit:
+You can run tests/checks without commit manually:
 ```
 ./vendor/bin/grumphp run
 ```
 
 Update notice
 -------------
-This library has been renamed to `sci3ma/symfony-grumphp` since 2019.10.26
+This library has been renamed to `sci3ma/symfony-grumphp` since 2019.11.10
