@@ -20,6 +20,7 @@ abstract class AbstractCommand extends Command
         'phpstan.neon',
         'phpunit.xml.dist',
         'config/cli-config.php',
+        'coverage.sh',
     ];
 
     /**

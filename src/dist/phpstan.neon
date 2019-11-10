@@ -14,9 +14,9 @@ parameters:
         - vendor/phpstan/phpstan-phpunit/extension.neon
         - vendor/phpstan/phpstan-phpunit/rules.neon
         - vendor/phpstan/phpstan-symfony/extension.neon
+        - vendor/thecodingmachine/phpstan-strict-rules/phpstan-strict-rules.neon
     parameters:
         symfony:
-#            container_xml_path: %rootDir%/../../../var/cache/dev/srcDevDebugProjectContainer.xml
             container_xml_path: %rootDir%/../../../var/cache/dev/srcApp_KernelDevDebugContainer.xml
     ignoreErrors:
         - '#PHPDoc tag @return with type object is not subtype of native type#'

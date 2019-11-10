@@ -60,6 +60,13 @@ parameters:
             run_always: false
         doctrine_orm:
             triggered_by: ['php', 'xml', 'yml']
+        shell:
+            script: ['./coverage.sh']
+            metadata:
+                priority: 999
+        clover_coverage:
+            clover_file: ./coverage.xml
+            level: 60
     # https://github.com/phpro/grumphp/blob/master/doc/testsuites.md
     testsuites:
         security:
