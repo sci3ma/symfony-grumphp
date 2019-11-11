@@ -19,7 +19,6 @@ abstract class AbstractCommand extends Command
         'php_cs.php',
         'phpstan.neon',
         'phpunit.xml.dist',
-        'config/cli-config.php',
         'coverage.sh',
     ];
 

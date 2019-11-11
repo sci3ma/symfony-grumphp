@@ -58,8 +58,6 @@ parameters:
             config_file: phpunit.xml.dist
             testsuite: Application
             always_execute: true
-        doctrine_orm:
-            triggered_by: ['php', 'xml', 'yml']
         shell:
             scripts: ['./coverage.sh']
             metadata:
@@ -90,7 +88,6 @@ parameters:
                 - phpmnd
                 - phpstan
                 - securitychecker
-                - doctrine_orm
         phpcsfixer:
             tasks:
                 - phpcsfixer2
