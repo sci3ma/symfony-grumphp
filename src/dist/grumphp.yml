@@ -18,6 +18,8 @@ parameters:
             whitelist_patterns:
                 - /^public\/(.*)/
                 - /^vendor\/(.*)/
+            metadata:
+                priority: 999
         phpcpd:
             directory: '.'
             exclude: ['vendor', 'public', 'var', 'config', 'bin', 'translations', 'src/Migrations']
@@ -25,6 +27,8 @@ parameters:
             fuzzy: false
             min_lines: 5
             min_tokens: 50
+            metadata:
+                priority: 997
         phpcsfixer2:
             rules:
                 - '@@PhpCsFixer'
@@ -36,35 +40,51 @@ parameters:
             verbose: true
             diff: true
             config: php_cs.php
+            metadata:
+                priority: 992
         phplint:
             triggered_by: ['php', 'phtml', 'php3', 'php4', 'php5', 'twig']
+            metadata:
+                priority: 996
         phpmd:
             exclude: ['tests', 'config', 'var', 'src/Migrations']
             ruleset: ['cleancode', 'codesize', 'controversial', 'design', 'unusedcode']
+            metadata:
+                priority: 995
         phpmnd:
             directory: 'src/'
             exclude: ['tests', 'config', 'var', 'translations', 'src/Migrations', 'src/DataFixtures']
             extensions: ['all']
             hint: true
             strings: false
+            metadata:
+                priority: 994
         phpstan:
             configuration: phpstan.neon
             level: 7
+            metadata:
+                priority: 993
         securitychecker:
             lockfile: composer.lock
             timeout: 30
             run_always: false
+            metadata:
+                priority: 998
         phpunitbridge:
             config_file: phpunit.xml.dist
             testsuite: Application
             always_execute: true
+            metadata:
+                priority: 991
         shell:
             scripts: ['./coverage.sh']
             metadata:
-                priority: 999
+                priority: 2
         clover_coverage:
             clover_file: ./coverage.xml
             level: 60
+            metadata:
+                priority: 1
     # https://github.com/phpro/grumphp/blob/master/doc/testsuites.md
     testsuites:
         security:
