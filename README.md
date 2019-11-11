@@ -2,11 +2,11 @@ Symfony + GrumPHP
 ==============
 `symfony-grumphp` is configured GrumPHP with bunch of tools for static code analysis mainly based on [PSRs](https://www.php-fig.org/psr/) + [Symfony Coding Standards](https://symfony.com/doc/current/contributing/code/standards.html) for Symfony Framework 4 projects.
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/sci3ma/symfony-grumphp?style=flat-square)
-![GitHub](https://img.shields.io/github/license/sci3ma/symfony-grumphp?style=flat-square)
-![Packagist (custom server)](https://img.shields.io/packagist/dt/sci3ma/symfony-grumphp?style=flat-square)
-![GitHub last commit](https://img.shields.io/github/last-commit/sci3ma/symfony-grumphp?style=flat-square)
-![Travis (.org)](https://img.shields.io/travis/sci3ma/symfony-grumphp?style=flat-square)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/sci3ma/symfony-grumphp?style=flat-square)](https://github.com/sci3ma/symfony-grumphp)
+[![GitHub](https://img.shields.io/github/license/sci3ma/symfony-grumphp?style=flat-square)](https://github.com/sci3ma/symfony-grumphp/blob/master/LICENSE)
+[![Packagist (custom server)](https://img.shields.io/packagist/dt/sci3ma/symfony-grumphp?style=flat-square)](https://packagist.org/packages/sci3ma/symfony-grumphp/stats)
+[![GitHub last commit](https://img.shields.io/github/last-commit/sci3ma/symfony-grumphp?style=flat-square)](https://github.com/sci3ma/symfony-grumphp/commits/master)
+[![Travis (.org)](https://img.shields.io/travis/sci3ma/symfony-grumphp?style=flat-square)](https://travis-ci.org/sci3ma/symfony-grumphp)
 
 Included tools
 --------------
@@ -27,7 +27,7 @@ Included tools
 
 Requirements
 ------------
-PHP needs to be a minimum version of PHP 7.0.
+PHP needs to be a minimum version of PHP 7.1.  
 Symfony Framework needs to be a minimum version of Symfony Framework 4.0.
 
 Install
