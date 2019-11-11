@@ -61,7 +61,7 @@ parameters:
         doctrine_orm:
             triggered_by: ['php', 'xml', 'yml']
         shell:
-            script: ['./coverage.sh']
+            scripts: ['./coverage.sh']
             metadata:
                 priority: 999
         clover_coverage:
