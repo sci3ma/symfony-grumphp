@@ -34,7 +34,9 @@
     },
     "autoload": {
         "psr-4": {
-            "MH\\SymfonyGrumPHP\\": "src/"
+            "App\\": "src/",
+            "MH\\SymfonyGrumPHP\\": "src/",
+            "MH\\SymfonyGrumPHP\\Tests\\": "tests/"
         }
     },
     "support": {
