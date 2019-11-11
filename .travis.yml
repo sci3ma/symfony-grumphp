@@ -6,7 +6,6 @@ php:
 
 env:
     matrix:
-        - DEPENDENCIES=--prefer-lowest
         -
 cache:
     directories:
@@ -17,7 +16,7 @@ before_install:
     - composer global require hirak/prestissimo
 
 install:
-    - travis_retry composer update --no-progress --profile --no-scripts --no-suggest $DEPENDENCIES
+    - travis_retry composer update --no-progress --profile --no-scripts --no-suggest
 
 script:
     - bin/symfony-grumphp install -q
