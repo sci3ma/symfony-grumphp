@@ -5,8 +5,8 @@ Symfony + GrumPHP
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/sci3ma/symfony-grumphp?style=flat-square)](https://github.com/sci3ma/symfony-grumphp)
 [![GitHub](https://img.shields.io/github/license/sci3ma/symfony-grumphp?style=flat-square)](https://github.com/sci3ma/symfony-grumphp/blob/master/LICENSE)
 [![Packagist (custom server)](https://img.shields.io/packagist/dt/sci3ma/symfony-grumphp?style=flat-square)](https://packagist.org/packages/sci3ma/symfony-grumphp/stats)
-[![GitHub last commit](https://img.shields.io/github/last-commit/sci3ma/symfony-grumphp?style=flat-square)](https://github.com/sci3ma/symfony-grumphp/commits/master)
-[![Travis (.org)](https://img.shields.io/travis/sci3ma/symfony-grumphp?style=flat-square)](https://travis-ci.org/sci3ma/symfony-grumphp)
+[![GitHub last commit](https://img.shields.io/github/last-commit/sci3ma/symfony-grumphp?style=flat-square&logo=github)](https://github.com/sci3ma/symfony-grumphp/commits/master)
+[![Travis (.org)](https://img.shields.io/travis/sci3ma/symfony-grumphp?style=flat-square&logo=travis-ci)](https://travis-ci.org/sci3ma/symfony-grumphp)
 
 Included tools
 --------------
