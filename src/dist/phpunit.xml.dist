@@ -42,8 +42,11 @@
                 <directory>./vendor</directory>
                 <directory>./public</directory>
                 <directory>./config</directory>
+                <directory>./var</directory>
+                <directory>./bin</directory>
                 <directory>./src/Migrations</directory>
                 <directory>./src/DataFixtures</directory>
+                <directory>./src/Entities</directory>
             </exclude>
         </whitelist>
     </filter>
