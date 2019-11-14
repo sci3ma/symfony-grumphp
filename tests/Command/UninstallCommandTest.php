@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace MH\SymfonyGrumPHP\Tests\Command;
 
+use MH\SymfonyGrumPHP\Command\InstallCommand;
 use MH\SymfonyGrumPHP\Command\UninstallCommand;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Application;
@@ -38,5 +39,13 @@ Files [phpunit.xml.dist, phpunit.xml.dist.scbak] have been deleted.
 Files [coverage.sh, coverage.sh.scbak] have been deleted.
 ';
         $this->assertSame($expectedOutput, $commandTester->getDisplay());
+
+        // revert removed files
+        $application->add(new InstallCommand());
+
+        $command = $application->find('install');
+        $commandTester = new CommandTester($command);
+        $commandTester->setInputs(['yes', 'yes', 'yes', 'yes', 'yes']);
+        $commandTester->execute(['command' => $command->getName()]);
     }
 }
