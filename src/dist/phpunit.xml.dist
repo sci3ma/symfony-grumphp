@@ -26,7 +26,7 @@
     <extensions>
         <!-- it begins a database transaction before every testcase and rolls it back after
              the test finished, so tests can manipulate the database without affecting other tests -->
-        <extension class="DAMA\DoctrineTestBundle\PHPUnit\PHPUnitExtension" />
+<!--        <extension class="DAMA\DoctrineTestBundle\PHPUnit\PHPUnitExtension" />-->
     </extensions>
 
     <listeners>
@@ -47,6 +47,7 @@
                 <directory>./src/Migrations</directory>
                 <directory>./src/DataFixtures</directory>
                 <directory>./src/Entities</directory>
+                <directory>./src/Kernel.php</directory>
             </exclude>
         </whitelist>
     </filter>

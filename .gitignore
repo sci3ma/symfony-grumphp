@@ -8,7 +8,8 @@ php_cs.php
 php_cs.php.scbak
 phpstan.neon
 phpstan.neon.scbak
-phpunit.xml.scbak
+phpunit.xml.dist
+phpunit.xml.dist.scbak
 config/cli-config.php
 coverage.sh
 !src/dist/coverage.sh

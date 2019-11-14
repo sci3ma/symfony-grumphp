@@ -114,3 +114,7 @@ parameters:
         phpstan:
             tasks:
                 - phpstan
+        coverage:
+            tasks:
+                - shell
+                - clover_coverage

@@ -43,6 +43,8 @@ and create (or update) configuration files:
 
 Configure
 ---------
+You can - and perhaps you should - check and customize all configured tasks in `grumphp.yml` file.
+
 GrumPHP should be enabled by default but you can also enable GrumPHP yourself:
 ```
 ./vendor/bin/grumphp git:init
@@ -52,6 +54,14 @@ Disable GrumPHP:
 ./vendor/bin/grumphp git:deinit
 ```
 You can find more GrumPHP configuration [here](https://github.com/phpro/grumphp/blob/master/doc/commands.md#installation).
+
+##### Test code with the database
+If you need to test code that interact with the database you better instal [`dama/doctrine-test-bundle`](https://github.com/dmaicher/doctrine-test-bundle):
+```shell script
+composer require --dev dama/doctrine-test-bundle
+```
+and uncomment extension `<extension class="DAMA\DoctrineTestBundle\PHPUnit\PHPUnitExtension" />` in `phpunit.xml.dist`.  
+Read more at: [How to Test Code that Interacts with the Database](https://symfony.com/doc/current/testing/database.html)
 
 Uninstall
 ---------
