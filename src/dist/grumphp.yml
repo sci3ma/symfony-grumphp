@@ -81,8 +81,8 @@ parameters:
             metadata:
                 priority: 2
         clover_coverage:
-            clover_file: ./coverage.xml
-            level: 60
+            clover_file: ./build/logs/clover.xml
+            level: 70
             metadata:
                 priority: 1
     # https://github.com/phpro/grumphp/blob/master/doc/testsuites.md

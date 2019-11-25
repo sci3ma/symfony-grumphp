@@ -7,6 +7,7 @@ Symfony + GrumPHP
 [![Packagist (custom server)](https://img.shields.io/packagist/dt/sci3ma/symfony-grumphp?style=flat-square)](https://packagist.org/packages/sci3ma/symfony-grumphp/stats)
 [![GitHub last commit](https://img.shields.io/github/last-commit/sci3ma/symfony-grumphp?style=flat-square&logo=github)](https://github.com/sci3ma/symfony-grumphp/commits/master)
 [![Travis (.org)](https://img.shields.io/travis/sci3ma/symfony-grumphp?style=flat-square&logo=travis-ci)](https://travis-ci.org/sci3ma/symfony-grumphp)
+[![Coveralls github](https://img.shields.io/coveralls/github/sci3ma/symfony-grumphp?logo=coveralls&style=flat-square)](https://coveralls.io/github/sci3ma/symfony-grumphp)
 
 Included tools
 --------------

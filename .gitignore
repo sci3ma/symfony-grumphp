@@ -13,5 +13,6 @@ phpunit.xml.dist.scbak
 config/cli-config.php
 coverage.sh
 !src/dist/coverage.sh
-coverage.xml
+build/logs/clover.xml
 bin/.phpunit
+build/*

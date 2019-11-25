@@ -24,3 +24,7 @@ script:
     - vendor/bin/grumphp run
     - bin/symfony-grumphp install -q
     - bin/symfony-grumphp uninstall -q
+
+after_success:
+    - bin/symfony-grumphp install -q
+    - vendor/bin/php-coveralls -v

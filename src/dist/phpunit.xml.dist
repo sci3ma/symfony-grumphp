@@ -18,7 +18,7 @@
     </php>
 
     <testsuites>
-        <testsuite name="Project Test Suite">
+        <testsuite name="Application">
             <directory>tests/</directory>
         </testsuite>
     </testsuites>
@@ -48,6 +48,8 @@
                 <directory>./src/DataFixtures</directory>
                 <directory>./src/Entities</directory>
                 <directory>./src/Kernel.php</directory>
+                <directory>./src/dist</directory>
+                <directory>./php_cs.php</directory>
             </exclude>
         </whitelist>
     </filter>
