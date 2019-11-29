@@ -35,7 +35,6 @@ class InstallCommandTest extends TestCase
 File [php_cs.php] exists. Do you want override file? (yes/no) [yes]: File [php_cs.php] has been created.
 File [phpstan.neon] exists. Do you want override file? (yes/no) [yes]: File [phpstan.neon] has been created.
 File [phpunit.xml.dist] exists. Do you want override file? (yes/no) [yes]: File [phpunit.xml.dist] has been created.
-File [coverage.sh] exists. Do you want override file? (yes/no) [yes]: File [coverage.sh] has been created.
 ';
         $this->assertSame($expectedOutput, $commandTester->getDisplay());
     }

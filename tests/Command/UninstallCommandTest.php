@@ -36,7 +36,6 @@ class UninstallCommandTest extends TestCase
 Files [php_cs.php, php_cs.php.scbak] have been deleted.
 Files [phpstan.neon, phpstan.neon.scbak] have been deleted.
 Files [phpunit.xml.dist, phpunit.xml.dist.scbak] have been deleted.
-Files [coverage.sh, coverage.sh.scbak] have been deleted.
 ';
         $this->assertSame($expectedOutput, $commandTester->getDisplay());
 

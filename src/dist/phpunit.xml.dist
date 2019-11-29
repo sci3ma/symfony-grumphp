@@ -46,7 +46,7 @@
                 <directory>./bin</directory>
                 <directory>./src/Migrations</directory>
                 <directory>./src/DataFixtures</directory>
-                <directory>./src/Entities</directory>
+                <directory>./src/Entity</directory>
                 <directory>./src/Kernel.php</directory>
                 <directory>./src/dist</directory>
                 <directory>./php_cs.php</directory>

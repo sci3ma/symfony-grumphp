@@ -77,7 +77,8 @@ parameters:
             metadata:
                 priority: 991
         shell:
-            scripts: ['./coverage.sh']
+            scripts:
+                - ['-c', './bin/phpunit --coverage-clover ./build/logs/clover.xml']
             metadata:
                 priority: 2
         clover_coverage:
