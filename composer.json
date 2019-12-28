@@ -11,7 +11,7 @@
     ],
     "type": "library",
     "require": {
-        "php": "^7.1",
+        "php": "^7.2.0|^7.3.0|^7.4.0",
         "composer/composer": "^1.8",
         "friendsofphp/php-cs-fixer": "^2.14",
         "jakub-onderka/php-parallel-lint": "^1.0",
