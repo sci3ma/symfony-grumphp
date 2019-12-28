@@ -1,6 +1,6 @@
 Symfony + GrumPHP
 ==============
-`symfony-grumphp` is configured GrumPHP with bunch of tools for static code analysis mainly based on [PSRs](https://www.php-fig.org/psr/) + [Symfony Coding Standards](https://symfony.com/doc/current/contributing/code/standards.html) for Symfony Framework 4 projects.
+`symfony-grumphp` is configured GrumPHP with bunch of tools for static code analysis mainly based on [PSRs](https://www.php-fig.org/psr/) + [Symfony Coding Standards](https://symfony.com/doc/current/contributing/code/standards.html) for Symfony Framework projects.
 
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/sci3ma/symfony-grumphp?style=flat-square)](https://github.com/sci3ma/symfony-grumphp)
 [![GitHub](https://img.shields.io/github/license/sci3ma/symfony-grumphp?style=flat-square)](https://github.com/sci3ma/symfony-grumphp/blob/master/LICENSE)
@@ -28,7 +28,7 @@ Included tools
 
 Requirements
 ------------
-PHP needs to be a minimum version of PHP 7.1.  
+PHP needs to be a minimum version of PHP 7.2.  
 Symfony Framework needs to be a minimum version of Symfony Framework 4.0.
 
 Install
