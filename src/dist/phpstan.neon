@@ -1,3 +1,11 @@
+includes:
+    - vendor/phpstan/phpstan-doctrine/extension.neon
+    - vendor/phpstan/phpstan-doctrine/rules.neon
+    - vendor/phpstan/phpstan-phpunit/extension.neon
+    - vendor/phpstan/phpstan-phpunit/rules.neon
+    - vendor/phpstan/phpstan-symfony/extension.neon
+    - vendor/thecodingmachine/phpstan-strict-rules/phpstan-strict-rules.neon
+
 parameters:
     excludes_analyse:
         - %rootDir%/../../../var/*
@@ -8,16 +16,6 @@ parameters:
         - %rootDir%/../../../php_cs.php
     autoload_directories:
         - %rootDir%/../../../src
-    includes:
-        - vendor/phpstan/phpstan-doctrine/extension.neon
-        - vendor/phpstan/phpstan-doctrine/rules.neon
-        - vendor/phpstan/phpstan-phpunit/extension.neon
-        - vendor/phpstan/phpstan-phpunit/rules.neon
-        - vendor/phpstan/phpstan-symfony/extension.neon
-        - vendor/thecodingmachine/phpstan-strict-rules/phpstan-strict-rules.neon
-    parameters:
-        symfony:
-            container_xml_path: %rootDir%/../../../var/cache/dev/srcApp_KernelDevDebugContainer.xml
     ignoreErrors:
         - '#PHPDoc tag @return with type object is not subtype of native type#'
         - '#Method .* should return .* but returns object#'
@@ -30,4 +28,3 @@ parameters:
         - '#call_user_func_array expects callable()#'
         - '#Call to an undefined method Doctrine\\ORM\\Event\\LifecycleEventArgs::getNewValue()#'
         - '#Call to an undefined method Doctrine\\ORM\\Event\\LifecycleEventArgs::getOldValue()#'
-        - '#.* Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface::dispatch().*invoked with 2 parameters, 1 required.#'

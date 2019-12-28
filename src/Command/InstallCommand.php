@@ -22,7 +22,7 @@ final class InstallCommand extends AbstractCommand
     /**
      * {@inheritdoc}
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setDescription('Create configuration files of SymfonyGrumPHP')
@@ -52,7 +52,36 @@ final class InstallCommand extends AbstractCommand
             }
 
             $filesystem->copy($sourceFile, $destinationFile);
+
+            if ('phpstan.neon' === $file) {
+                $this->modifyNeonFile($destinationFile);
+            }
+
             $output->writeln(sprintf('File [%s] has been created.', $file));
+        }
+
+        return 0;
+    }
+
+    /**
+     * @param string $destinationFile
+     */
+    private function modifyNeonFile(string $destinationFile): void
+    {
+        $symfonyKernel = 'Symfony\Component\HttpKernel\Kernel';
+        if (class_exists($symfonyKernel)) {
+            $containerXmlPath = '%rootDir%/../../../var/cache/dev/srcDevDebugProjectContainer.xml';
+
+            if (version_compare($symfonyKernel::VERSION, '5.0.0', '>=')) {
+                $containerXmlPath = '%rootDir%/../../../var/cache/dev/App_KernelDevDebugContainer.xml';
+            }
+
+            if (version_compare($symfonyKernel::VERSION, '4.2.0', '>=')) {
+                $containerXmlPath = '%rootDir%/../../../var/cache/dev/srcApp_KernelDevDebugContainer.xml';
+            }
+
+            file_put_contents($destinationFile, sprintf('    symfony:%s', PHP_EOL), FILE_APPEND);
+            file_put_contents($destinationFile, sprintf('        container_xml_path: %s', $containerXmlPath), FILE_APPEND);
         }
     }
 }

@@ -21,7 +21,7 @@ parameters:
             metadata:
                 priority: 999
         phpcpd:
-            directory: '.'
+            directory: ['.']
             exclude: ['vendor', 'public', 'var', 'config', 'bin', 'translations', 'src/Migrations']
             names_exclude: []
             fuzzy: false
@@ -62,6 +62,7 @@ parameters:
         phpstan:
             configuration: phpstan.neon
             level: 7
+            memory_limit: '-1'
             metadata:
                 priority: 993
         securitychecker:

@@ -22,7 +22,7 @@ final class UninstallCommand extends AbstractCommand
     /**
      * {@inheritdoc}
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setDescription('Remove configuration files of SymfonyGrumPHP')
@@ -45,5 +45,7 @@ final class UninstallCommand extends AbstractCommand
                 $output->writeln(sprintf('Files [%s, %s.scbak] have been deleted.', $file, $file));
             }
         }
+
+        return 0;
     }
 }
