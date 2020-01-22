@@ -22,7 +22,7 @@ parameters:
                 priority: 999
         phpcpd:
             directory: ['.']
-            exclude: ['vendor', 'public', 'var', 'config', 'bin', 'translations', 'src/Migrations']
+            exclude: ['vendor', 'public', 'var', 'config', 'bin', 'translations', 'src/Migrations', 'tests', 'src/DataFixtures']
             names_exclude: []
             fuzzy: false
             min_lines: 5
@@ -53,7 +53,7 @@ parameters:
                 priority: 995
         phpmnd:
             directory: 'src/'
-            exclude: ['tests', 'config', 'var', 'translations', 'src/Migrations', 'src/DataFixtures']
+            exclude: ['../tests', '../config', '../var', '../translations', 'Migrations', 'DataFixtures']
             extensions: ['all']
             hint: true
             strings: false

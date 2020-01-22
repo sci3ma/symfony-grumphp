@@ -7,6 +7,8 @@ includes:
     - vendor/thecodingmachine/phpstan-strict-rules/phpstan-strict-rules.neon
 
 parameters:
+    checkGenericClassInNonGenericObjectType: false
+    inferPrivatePropertyTypeFromConstructor: true
     excludes_analyse:
         - %rootDir%/../../../var/*
         - %rootDir%/../../../public/*
@@ -28,3 +30,4 @@ parameters:
         - '#call_user_func_array expects callable()#'
         - '#Call to an undefined method Doctrine\\ORM\\Event\\LifecycleEventArgs::getNewValue()#'
         - '#Call to an undefined method Doctrine\\ORM\\Event\\LifecycleEventArgs::getOldValue()#'
+        - '#Property .*\\Entity\\.* has no typehint specified.#'
