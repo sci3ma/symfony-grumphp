@@ -72,12 +72,12 @@ final class InstallCommand extends AbstractCommand
         if (class_exists($symfonyKernel)) {
             $containerXmlPath = '%rootDir%/../../../var/cache/dev/srcDevDebugProjectContainer.xml';
 
-            if (version_compare($symfonyKernel::VERSION, '5.0.0', '>=')) {
-                $containerXmlPath = '%rootDir%/../../../var/cache/dev/App_KernelDevDebugContainer.xml';
-            }
-
             if (version_compare($symfonyKernel::VERSION, '4.2.0', '>=')) {
                 $containerXmlPath = '%rootDir%/../../../var/cache/dev/srcApp_KernelDevDebugContainer.xml';
+            }
+
+            if (version_compare($symfonyKernel::VERSION, '5.0.0', '>=')) {
+                $containerXmlPath = '%rootDir%/../../../var/cache/dev/App_KernelDevDebugContainer.xml';
             }
 
             file_put_contents($destinationFile, sprintf('    symfony:%s', PHP_EOL), FILE_APPEND);
