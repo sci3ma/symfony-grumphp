@@ -1,7 +1,5 @@
 # https://github.com/phpro/grumphp
 parameters:
-    git_dir: .
-    bin_dir: vendor/bin
     stop_on_failure: false
     process_timeout: 120
     # https://github.com/phpro/grumphp/blob/master/doc/tasks.md

@@ -9,6 +9,7 @@ includes:
 parameters:
     checkGenericClassInNonGenericObjectType: false
     inferPrivatePropertyTypeFromConstructor: true
+    checkMissingIterableValueType: false
     excludes_analyse:
         - %rootDir%/../../../var/*
         - %rootDir%/../../../public/*
