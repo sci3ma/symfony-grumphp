@@ -1,6 +1,6 @@
-Symfony + GrumPHP
-==============
-`symfony-grumphp` is configured GrumPHP with bunch of tools for static code analysis mainly based on [PSRs](https://www.php-fig.org/psr/) + [Symfony Coding Standards](https://symfony.com/doc/current/contributing/code/standards.html) for Symfony Framework projects.
+# Symfony + GrumPHP
+
+`symfony-grumphp` is configured GrumPHP with bunch of tools for static code analysis mainly based on [PSRs](https://www.php-fig.org/psr/) and [Symfony Coding Standards](https://symfony.com/doc/current/contributing/code/standards.html) for Symfony Framework projects.
 
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/sci3ma/symfony-grumphp?style=flat-square)](https://github.com/sci3ma/symfony-grumphp)
 [![GitHub](https://img.shields.io/github/license/sci3ma/symfony-grumphp?style=flat-square)](https://github.com/sci3ma/symfony-grumphp/blob/master/LICENSE)
@@ -9,8 +9,7 @@ Symfony + GrumPHP
 [![Travis (.org)](https://img.shields.io/travis/sci3ma/symfony-grumphp?style=flat-square&logo=travis-ci)](https://travis-ci.org/sci3ma/symfony-grumphp)
 [![Coveralls github](https://img.shields.io/coveralls/github/sci3ma/symfony-grumphp?logo=coveralls&style=flat-square)](https://coveralls.io/github/sci3ma/symfony-grumphp)
 
-Included tools
---------------
+## Included tools
 * [GrumPHP](https://github.com/phpro/grumphp): `phpro/grumphp`
 * [PhpCpd](https://github.com/sebastianbergmann/phpcpd): `sebastian/phpcpd`
 * [PHP-CS-FIXER](https://github.com/FriendsOfPHP/PHP-CS-Fixer): `friendsofphp/php-cs-fixer`
@@ -26,13 +25,11 @@ Included tools
     * With Clover Coverage and percentage code coverage check
 * [SensioLabs Security Checker](https://github.com/sensiolabs/security-checker): `sensiolabs/security-checker`
 
-Requirements
-------------
+## Requirements
 PHP needs to be a minimum version of PHP 7.2.  
-Symfony Framework needs to be a minimum version of Symfony Framework 4.0.
+Symfony Framework needs to be a minimum version of Symfony Framework 4.0 or 5.0.
 
-Install
--------
+## Installation
 To install `symfony-grumphp`, [install Composer](https://getcomposer.org/download/), execute the following command:
 ```
 composer require --dev sci3ma/symfony-grumphp
@@ -42,47 +39,41 @@ and create (or update) configuration files:
 ./vendor/bin/symfony-grumphp install
 ```
 
-Configure
+## Configuration
 ---------
-You can - and perhaps you should - check and customize all configured tasks in `grumphp.yml` file.
+You can, and perhaps you should, check and customize all configured tasks in `grumphp.yml` file in project root folder.
 
 GrumPHP should be enabled by default but you can also enable GrumPHP yourself:
 ```
 ./vendor/bin/grumphp git:init
 ```
-Disable GrumPHP:
+or disable GrumPHP:
 ```
 ./vendor/bin/grumphp git:deinit
 ```
 You can find more GrumPHP configuration [here](https://github.com/phpro/grumphp/blob/master/doc/commands.md#installation).
 
 ##### Test code with the database
-If you need to test code that interact with the database you better instal [`dama/doctrine-test-bundle`](https://github.com/dmaicher/doctrine-test-bundle):
-```shell script
+If you need to test code that interact with the database you need to instal [`dama/doctrine-test-bundle`](https://github.com/dmaicher/doctrine-test-bundle):
+```
 composer require --dev dama/doctrine-test-bundle
 ```
 and uncomment extension `<extension class="DAMA\DoctrineTestBundle\PHPUnit\PHPUnitExtension" />` in `phpunit.xml.dist`.  
-Read more at: [How to Test Code that Interacts with the Database](https://symfony.com/doc/current/testing/database.html)
+Read more about [how to Test Code that Interacts with the Database](https://symfony.com/doc/current/testing/database.html)
 
-Uninstall
----------
-Remove configuration files:
+## Uninstall
+If you want to uninstall this library remove configuration files first:
 ```
 ./vendor/bin/symfony-grumphp uninstall
 ```
-Then remove package:
+then remove package:
 ```
 composer remove sci3ma/symfony-grumphp
 ```
 
-Force run
----------
-You can run tests/checks without commit manually:
+## Force run
+You can run tests/checks our code without commit manually:
 ```
 ./vendor/bin/grumphp run
 ```
-
-Update notice
--------------
-This library has been renamed to `sci3ma/symfony-grumphp` since 2019.11.10
  

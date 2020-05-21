@@ -32,3 +32,8 @@ parameters:
         - '#Call to an undefined method Doctrine\\ORM\\Event\\LifecycleEventArgs::getNewValue()#'
         - '#Call to an undefined method Doctrine\\ORM\\Event\\LifecycleEventArgs::getOldValue()#'
         - '#Property .*\\Entity\\.* has no typehint specified.#'
+        - '#Call to an undefined method Doctrine\\Persistence\\ObjectRepositor.*#'
+        - '#Method App\\.*Repository().*should return App\\Repository\\.*Repository but returns Doctrine\\ORM\\EntityRepository.*#'
+        - '#Symfony\\Component\\Security\\Core\\User\\UserInterface is not subtype of#'
+        - '#Call to an undefined method Knp\\Bundle\\PaginatorBundle\\Pagination\\SlidingPaginationInterface.*#'
+        - '#Call to an undefined method DateTimeInterface::add()#'

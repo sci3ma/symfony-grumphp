@@ -4,6 +4,11 @@ parameters:
     process_timeout: 120
     # https://github.com/phpro/grumphp/blob/master/doc/tasks.md
     tasks:
+        clover_coverage:
+            clover_file: ./build/logs/clover.xml
+            level: 70
+            metadata:
+                priority: 1
         git_blacklist:
             keywords:
                 - "die("
@@ -41,7 +46,7 @@ parameters:
             metadata:
                 priority: 992
         phplint:
-            triggered_by: ['php', 'phtml', 'php3', 'php4', 'php5', 'twig']
+            triggered_by: ['php', 'phtml', 'php3', 'php4', 'php5']
             metadata:
                 priority: 996
         phpmd:
@@ -63,28 +68,23 @@ parameters:
             memory_limit: '-1'
             metadata:
                 priority: 993
-        securitychecker:
-            lockfile: composer.lock
-            timeout: 30
-            run_always: false
-            metadata:
-                priority: 998
         phpunitbridge:
             config_file: phpunit.xml.dist
             testsuite: Application
             always_execute: true
             metadata:
                 priority: 991
+        securitychecker:
+            lockfile: composer.lock
+            timeout: 30
+            run_always: false
+            metadata:
+                priority: 998
         shell:
             scripts:
                 - ['-c', './bin/phpunit --coverage-clover ./build/logs/clover.xml']
             metadata:
                 priority: 2
-        clover_coverage:
-            clover_file: ./build/logs/clover.xml
-            level: 70
-            metadata:
-                priority: 1
     # https://github.com/phpro/grumphp/blob/master/doc/testsuites.md
     testsuites:
         security:
