@@ -17,8 +17,6 @@ parameters:
         - %rootDir%/../../../vendor/*
         - %rootDir%/../../../tests/*
         - %rootDir%/../../../php_cs.php
-    autoload_directories:
-        - %rootDir%/../../../src
     ignoreErrors:
         - '#PHPDoc tag @return with type object is not subtype of native type#'
         - '#Method .* should return .* but returns object#'
