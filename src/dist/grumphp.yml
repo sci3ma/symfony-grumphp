@@ -54,14 +54,14 @@ parameters:
             ruleset: ['cleancode', 'codesize', 'controversial', 'design', 'unusedcode']
             metadata:
                 priority: 995
-        phpmnd:
-            directory: 'src/'
-            exclude: ['../tests', '../config', '../var', '../translations', 'Migrations', 'DataFixtures']
-            extensions: ['all']
-            hint: true
-            strings: false
-            metadata:
-                priority: 994
+#        phpmnd:
+#            directory: 'src/'
+#            exclude: ['../tests', '../config', '../var', '../translations', 'Migrations', 'DataFixtures']
+#            extensions: ['all']
+#            hint: true
+#            strings: false
+#            metadata:
+#                priority: 994
         phpstan:
             configuration: phpstan.neon
             level: 7
@@ -97,7 +97,7 @@ parameters:
             tasks:
                 - phpcsfixer2
                 - phpmd
-                - phpmnd
+#                - phpmnd
         no-phpunitbridge:
             tasks:
                 - git_blacklist
@@ -105,7 +105,7 @@ parameters:
                 - phpcsfixer2
                 - phplint
                 - phpmd
-                - phpmnd
+#                - phpmnd
                 - phpstan
                 - securitychecker
         phpcsfixer:
