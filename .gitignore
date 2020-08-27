@@ -16,3 +16,4 @@ coverage.sh
 build/logs/clover.xml
 bin/.phpunit
 build/*
+.phpunit.cache

@@ -15,7 +15,7 @@
 * [PHP-CS-FIXER](https://github.com/FriendsOfPHP/PHP-CS-Fixer): `friendsofphp/php-cs-fixer`
 * [PHPLint](https://github.com/JakubOnderka/PHP-Parallel-Lint): `jakub-onderka/php-parallel-lint`
 * [PhpMd](https://github.com/phpmd/phpmd): `phpmd/phpmd`
-* [PhpMnd](https://github.com/povils/phpmnd): `povils/phpmnd`
+* [~~PhpMnd~~](https://github.com/povils/phpmnd): `povils/phpmnd` _(likely abandoned)_
 * [PHPStan](https://github.com/phpstan/phpstan): `phpstan/phpstan`
     * [Doctrine extension](https://github.com/phpstan/phpstan-doctrine): `phpstan/phpstan-doctrine`
     * [PHPUnit extension](https://github.com/phpstan/phpstan-phpunit): `phpstan/phpstan-phpunit`

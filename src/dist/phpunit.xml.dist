@@ -2,9 +2,10 @@
 
 <!-- https://phpunit.de/manual/current/en/appendixes.configuration.html -->
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="bin/.phpunit/phpunit.xsd"
+         xsi:noNamespaceSchemaLocation="vendor/bin/.phpunit/phpunit.xsd"
          backupGlobals="false"
          colors="true"
+         cacheResultFile=".phpunit.cache/test-results"
          bootstrap="config/bootstrap.php"
 >
     <php>
@@ -12,7 +13,7 @@
         <ini name="memory_limit" value="-1" />
         <env name="APP_ENV" value="test" force="true"/>
         <env name="KERNEL_CLASS" value="App\Kernel" />
-        <env name="SYMFONY_PHPUNIT_VERSION" value="7.5"/>
+        <env name="SYMFONY_PHPUNIT_VERSION" value="9.3"/>
         <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak"/>
         <server name="SYMFONY_PHPUNIT_REMOVE" value=""/>
     </php>
@@ -23,34 +24,41 @@
         </testsuite>
     </testsuites>
 
+    <!--
     <extensions>
-        <!-- it begins a database transaction before every testcase and rolls it back after
-             the test finished, so tests can manipulate the database without affecting other tests -->
-<!--        <extension class="DAMA\DoctrineTestBundle\PHPUnit\PHPUnitExtension" />-->
+        it begins a database transaction before every testcase and rolls it back after
+             the test finished, so tests can manipulate the database without affecting other tests
+        <extension class="DAMA\DoctrineTestBundle\PHPUnit\PHPUnitExtension" />
     </extensions>
+    -->
 
     <listeners>
         <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
-        <listener class="Symfony\Bridge\PhpUnit\CoverageListener" />
+        <!--        <listener class="Symfony\Bridge\PhpUnit\CoverageListener" />-->
     </listeners>
 
-    <filter>
-        <whitelist addUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">./</directory>
-            <exclude>
-                <directory>./tests</directory>
-                <directory>./vendor</directory>
-                <directory>./public</directory>
-                <directory>./config</directory>
-                <directory>./var</directory>
-                <directory>./bin</directory>
-                <directory>./src/Migrations</directory>
-                <directory>./src/DataFixtures</directory>
-                <directory>./src/Entity</directory>
-                <directory>./src/Kernel.php</directory>
-                <directory>./src/dist</directory>
-                <directory>./php_cs.php</directory>
-            </exclude>
-        </whitelist>
-    </filter>
+    <coverage cacheDirectory=".phpunit.cache/code-coverage"
+              processUncoveredFiles="true"
+              ignoreDeprecatedCodeUnits="true">
+        <include>
+            <directory suffix=".php">.</directory>
+        </include>
+
+        <exclude>
+            <directory>./tests</directory>
+            <directory>./vendor</directory>
+            <directory>./public</directory>
+            <directory>./config</directory>
+            <directory>./var</directory>
+            <directory>./bin</directory>
+            <directory>./migrations</directory>
+            <directory>./src/Migrations</directory>
+            <directory>./src/DataFixtures</directory>
+            <directory>./src/Entity</directory>
+            <directory>./src/DTO</directory>
+            <directory>./src/Kernel.php</directory>
+            <directory>./src/dist</directory>
+            <directory>./php_cs.php</directory>
+        </exclude>
+    </coverage>
 </phpunit>

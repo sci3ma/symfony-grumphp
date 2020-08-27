@@ -1,7 +1,10 @@
 # https://github.com/phpro/grumphp
-parameters:
+grumphp:
     stop_on_failure: false
     process_timeout: 120
+    parallel:
+        enabled: true
+        max_workers: 10
     # https://github.com/phpro/grumphp/blob/master/doc/tasks.md
     tasks:
         clover_coverage:
@@ -25,21 +28,20 @@ parameters:
                 priority: 999
         phpcpd:
             directory: ['.']
-            exclude: ['vendor', 'public', 'var', 'config', 'bin', 'translations', 'src/Migrations', 'tests', 'src/DataFixtures']
-            names_exclude: []
+            exclude: ['vendor', 'public', 'var', 'config', 'bin', 'translations', 'src/Migrations', 'tests', 'src/DataFixtures', 'migrations']
             fuzzy: false
             min_lines: 5
             min_tokens: 50
             metadata:
                 priority: 997
-        phpcsfixer2:
+        phpcsfixer:
             rules:
-                - '@@PhpCsFixer'
+                - '@PhpCsFixer'
                 - -multiline_whitespace_before_semicolons
                 - -php_unit_internal_class
                 - -php_unit_test_class_requires_covers
                 - -no_superfluous_phpdoc_tags
-                - '@@DoctrineAnnotation'
+                - '@DoctrineAnnotation'
             verbose: true
             diff: true
             config: php_cs.php
@@ -50,7 +52,7 @@ parameters:
             metadata:
                 priority: 996
         phpmd:
-            exclude: ['tests', 'config', 'var', 'src/Migrations']
+            exclude: ['tests', 'config', 'var', 'src/Migrations', 'migrations']
             ruleset: ['cleancode', 'codesize', 'controversial', 'design', 'unusedcode']
             metadata:
                 priority: 995
@@ -82,7 +84,7 @@ parameters:
                 priority: 998
         shell:
             scripts:
-                - ['-c', './bin/phpunit --coverage-clover ./build/logs/clover.xml']
+                - ['-c', './vendor/bin/simple-phpunit --coverage-clover ./build/logs/clover.xml']
             metadata:
                 priority: 2
     # https://github.com/phpro/grumphp/blob/master/doc/testsuites.md
@@ -95,14 +97,14 @@ parameters:
                 - phpunitbridge
         phpcsmd:
             tasks:
-                - phpcsfixer2
+                - phpcsfixer
                 - phpmd
 #                - phpmnd
         no-phpunitbridge:
             tasks:
                 - git_blacklist
                 - phpcpd
-                - phpcsfixer2
+                - phpcsfixer
                 - phplint
                 - phpmd
 #                - phpmnd
@@ -110,7 +112,7 @@ parameters:
                 - securitychecker
         phpcsfixer:
             tasks:
-                - phpcsfixer2
+                - phpcsfixer
         phpstan:
             tasks:
                 - phpstan
