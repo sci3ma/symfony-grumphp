@@ -4,7 +4,7 @@ grumphp:
     process_timeout: 120
     parallel:
         enabled: true
-        max_workers: 10
+        max_workers: 20
     # https://github.com/phpro/grumphp/blob/master/doc/tasks.md
     tasks:
         clover_coverage:
@@ -33,7 +33,7 @@ grumphp:
             min_lines: 5
             min_tokens: 50
             metadata:
-                priority: 997
+                priority: 999
         phpcsfixer:
             rules:
                 - '@PhpCsFixer'
@@ -46,42 +46,34 @@ grumphp:
             diff: true
             config: php_cs.php
             metadata:
-                priority: 992
+                priority: 999
         phplint:
             triggered_by: ['php', 'phtml', 'php3', 'php4', 'php5']
             metadata:
-                priority: 996
+                priority: 999
         phpmd:
             exclude: ['tests', 'config', 'var', 'src/Migrations', 'migrations']
             ruleset: ['cleancode', 'codesize', 'controversial', 'design', 'unusedcode']
             metadata:
-                priority: 995
-#        phpmnd:
-#            directory: 'src/'
-#            exclude: ['../tests', '../config', '../var', '../translations', 'Migrations', 'DataFixtures']
-#            extensions: ['all']
-#            hint: true
-#            strings: false
-#            metadata:
-#                priority: 994
+                priority: 999
         phpstan:
             configuration: phpstan.neon
             level: 7
             memory_limit: '-1'
             metadata:
-                priority: 993
+                priority: 999
         phpunitbridge:
             config_file: phpunit.xml.dist
             testsuite: Application
             always_execute: true
             metadata:
-                priority: 991
+                priority: 999
         securitychecker:
             lockfile: composer.lock
             timeout: 30
             run_always: false
             metadata:
-                priority: 998
+                priority: 999
         shell:
             scripts:
                 - ['-c', './vendor/bin/simple-phpunit --coverage-clover ./build/logs/clover.xml']
@@ -99,7 +91,6 @@ grumphp:
             tasks:
                 - phpcsfixer
                 - phpmd
-#                - phpmnd
         no-phpunitbridge:
             tasks:
                 - git_blacklist
@@ -107,7 +98,6 @@ grumphp:
                 - phpcsfixer
                 - phplint
                 - phpmd
-#                - phpmnd
                 - phpstan
                 - securitychecker
         phpcsfixer:
