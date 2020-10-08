@@ -16,7 +16,7 @@ abstract class AbstractCommand extends Command
      */
     protected const CONF_FILES = [
         'grumphp.yml',
-        'php_cs.php',
+        '.php_cs',
         'phpstan.neon',
         'phpunit.xml.dist',
     ];

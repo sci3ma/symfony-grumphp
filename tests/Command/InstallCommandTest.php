@@ -32,7 +32,7 @@ class InstallCommandTest extends TestCase
 
         $expectedOutput =
             'File [grumphp.yml] exists. Do you want override file? (yes/no) [yes]: File [grumphp.yml] has been created.
-File [php_cs.php] exists. Do you want override file? (yes/no) [yes]: File [php_cs.php] has been created.
+File [.php_cs] exists. Do you want override file? (yes/no) [yes]: File [.php_cs] has been created.
 File [phpstan.neon] exists. Do you want override file? (yes/no) [yes]: File [phpstan.neon] has been created.
 File [phpunit.xml.dist] exists. Do you want override file? (yes/no) [yes]: File [phpunit.xml.dist] has been created.
 ';

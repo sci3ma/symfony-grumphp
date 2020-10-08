@@ -33,7 +33,7 @@ class UninstallCommandTest extends TestCase
 
         $expectedOutput =
             'Do you want to remove configuration files? (yes/no) [yes]: Files [grumphp.yml, grumphp.yml.scbak] have been deleted.
-Files [php_cs.php, php_cs.php.scbak] have been deleted.
+Files [.php_cs, .php_cs.scbak] have been deleted.
 Files [phpstan.neon, phpstan.neon.scbak] have been deleted.
 Files [phpunit.xml.dist, phpunit.xml.dist.scbak] have been deleted.
 ';

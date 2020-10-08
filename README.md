@@ -6,16 +6,15 @@
 [![GitHub](https://img.shields.io/github/license/sci3ma/symfony-grumphp?style=flat-square)](https://github.com/sci3ma/symfony-grumphp/blob/master/LICENSE)
 [![Packagist (custom server)](https://img.shields.io/packagist/dt/sci3ma/symfony-grumphp?style=flat-square)](https://packagist.org/packages/sci3ma/symfony-grumphp/stats)
 [![GitHub last commit](https://img.shields.io/github/last-commit/sci3ma/symfony-grumphp?style=flat-square&logo=github)](https://github.com/sci3ma/symfony-grumphp/commits/master)
-[![Travis (.org)](https://img.shields.io/travis/sci3ma/symfony-grumphp?style=flat-square&logo=travis-ci)](https://travis-ci.org/sci3ma/symfony-grumphp)
+[![Travis (.org)](https://img.shields.io/travis/sci3ma/symfony-grumphp?style=flat-square&logo=travis-ci)](https://travis-ci.com/sci3ma/symfony-grumphp)
 [![Coveralls github](https://img.shields.io/coveralls/github/sci3ma/symfony-grumphp?logo=coveralls&style=flat-square)](https://coveralls.io/github/sci3ma/symfony-grumphp)
 
 ## Included tools
 * [GrumPHP](https://github.com/phpro/grumphp): `phpro/grumphp`
 * [PhpCpd](https://github.com/sebastianbergmann/phpcpd): `sebastian/phpcpd`
 * [PHP-CS-FIXER](https://github.com/FriendsOfPHP/PHP-CS-Fixer): `friendsofphp/php-cs-fixer`
-* [PHPLint](https://github.com/JakubOnderka/PHP-Parallel-Lint): `jakub-onderka/php-parallel-lint`
+* [PHPLint](https://github.com/php-parallel-lint/PHP-Parallel-Lint): `php-parallel-lint/php-parallel-lint`
 * [PhpMd](https://github.com/phpmd/phpmd): `phpmd/phpmd`
-* [~~PhpMnd~~](https://github.com/povils/phpmnd): `povils/phpmnd` _(likely abandoned)_
 * [PHPStan](https://github.com/phpstan/phpstan): `phpstan/phpstan`
     * [Doctrine extension](https://github.com/phpstan/phpstan-doctrine): `phpstan/phpstan-doctrine`
     * [PHPUnit extension](https://github.com/phpstan/phpstan-phpunit): `phpstan/phpstan-phpunit`

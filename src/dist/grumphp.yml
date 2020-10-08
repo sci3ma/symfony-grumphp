@@ -44,7 +44,7 @@ grumphp:
                 - '@DoctrineAnnotation'
             verbose: true
             diff: true
-            config: php_cs.php
+            config: .php_cs
             metadata:
                 priority: 999
         phplint:
