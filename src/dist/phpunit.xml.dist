@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- https://phpunit.de/manual/current/en/appendixes.configuration.html -->
+<!-- https://phpunit.readthedocs.io/en/latest/configuration.html -->
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="vendor/bin/.phpunit/phpunit.xsd"
          backupGlobals="false"
          colors="true"
          cacheResultFile=".phpunit.cache/test-results"
-         bootstrap="config/bootstrap.php"
+         bootstrap="tests/bootstrap.php"
 >
     <php>
         <ini name="error_reporting" value="-1" />

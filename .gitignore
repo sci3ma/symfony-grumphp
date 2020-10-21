@@ -18,3 +18,4 @@ bin/.phpunit
 build/*
 .phpunit.cache
 .php_cs
+*.scback
