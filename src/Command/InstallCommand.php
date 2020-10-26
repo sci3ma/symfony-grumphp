@@ -80,10 +80,6 @@ final class InstallCommand extends AbstractCommand
                 $containerXmlPath = '%rootDir%/../../../var/cache/dev/App_KernelDevDebugContainer.xml';
             }
 
-            if (version_compare($symfonyKernel::VERSION, '5.2.0', '>=')) {
-                $containerXmlPath = '%rootDir%/../../../var/cache/dev/App_KernelDevDebugContainer.php';
-            }
-
             file_put_contents($destinationFile, sprintf('    symfony:%s', PHP_EOL), FILE_APPEND);
             file_put_contents($destinationFile, sprintf('        container_xml_path: %s', $containerXmlPath), FILE_APPEND);
         }
