@@ -11,12 +11,13 @@
     ],
     "type": "library",
     "require": {
-        "php": "^7.3.0|^7.4.0",
-        "composer/composer": "^1.10",
-        "friendsofphp/php-cs-fixer": "^2.16",
+        "php": "^7.3|^8.0",
+        "composer/composer": "^2.0",
+        "enlightn/security-checker": "^1.5",
+        "friendsofphp/php-cs-fixer": "^2.18",
         "php-parallel-lint/php-parallel-lint": "^1.2",
-        "phpmd/phpmd": "^2.8",
-        "phpro/grumphp": "^0.20.0|^0.21.0",
+        "phpmd/phpmd": "^2.9",
+        "phpro/grumphp": "^1.3",
         "phpstan/phpstan": "^0.11.2|^0.12.26",
         "phpstan/phpstan-doctrine": "^0.11.1|^0.12.0",
         "phpstan/phpstan-phpunit": "^0.11.0|^0.12.0",
@@ -30,7 +31,7 @@
         "thecodingmachine/phpstan-strict-rules": "^0.11.2|^0.12.0"
     },
     "require-dev": {
-        "php-coveralls/php-coveralls": "^2.2"
+        "php-coveralls/php-coveralls": "^2.4"
     },
     "autoload": {
         "psr-4": {

@@ -35,3 +35,5 @@ parameters:
         - '#Symfony\\Component\\Security\\Core\\User\\UserInterface is not subtype of#'
         - '#Call to an undefined method Knp\\Bundle\\PaginatorBundle\\Pagination\\SlidingPaginationInterface.*#'
         - '#Call to an undefined method DateTimeInterface::add\(\)#'
+        - '#string\|Stringable\|Symfony\\Component\\Security\\Core\\User\\UserInterface#'
+        - '#Variable .* in PHPDoc tag @var does not exist#'

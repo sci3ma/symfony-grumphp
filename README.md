@@ -22,7 +22,7 @@
     * [TheCodingMachine's additional rules](https://github.com/thecodingmachine/phpstan-strict-rules): `thecodingmachine/phpstan-strict-rules`
 * [PHPUnit Bridge](https://github.com/symfony/phpunit-bridge): `symfony/phpunit-bridge`
     * With Clover Coverage and percentage code coverage check
-* [SensioLabs Security Checker](https://github.com/sensiolabs/security-checker): `sensiolabs/security-checker`
+* [Enlightn Security Checker](https://github.com/enlightn/security-checker): `enlightn/security-checker`
 
 ## Requirements
 PHP needs to be a minimum version of PHP 7.2.  
@@ -39,7 +39,6 @@ and create (or update) configuration files:
 ```
 
 ## Configuration
----------
 You can, and perhaps you should, check and customize all configured tasks in `grumphp.yml` file in project root folder.
 
 GrumPHP should be enabled by default but you can also enable GrumPHP yourself:

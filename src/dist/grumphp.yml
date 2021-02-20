@@ -14,12 +14,12 @@ grumphp:
                 priority: 1
         git_blacklist:
             keywords:
-                - "die("
-                - "var_dump("
+                - "die\\("
+                - "var_dump\\("
                 - "exit;"
                 - "echo "
-                - "dump("
-                - "dd("
+                - "dump\\("
+                - "dd\\("
             regexp_type: G
             whitelist_patterns:
                 - /^public\/(.*)/
@@ -28,7 +28,7 @@ grumphp:
                 priority: 999
         phpcpd:
             directory: ['.']
-            exclude: ['vendor', 'public', 'var', 'config', 'bin', 'translations', 'src/Migrations', 'tests', 'src/DataFixtures', 'migrations']
+            exclude: ['vendor', 'public', 'var', 'config', 'bin', 'translations', 'src/Presentation/Translations', 'src/Migrations', 'src/Infrastructure/Migrations', 'tests', 'src/DataFixtures', 'migrations']
             fuzzy: false
             min_lines: 5
             min_tokens: 50
@@ -52,7 +52,7 @@ grumphp:
             metadata:
                 priority: 999
         phpmd:
-            exclude: ['tests', 'config', 'var', 'src/Migrations', 'migrations']
+            exclude: ['tests', 'config', 'var', 'src/Migrations', 'src/Infrastructure/Migrations', 'migrations']
             ruleset: ['cleancode', 'codesize', 'controversial', 'design', 'unusedcode']
             metadata:
                 priority: 999
@@ -68,9 +68,8 @@ grumphp:
             always_execute: true
             metadata:
                 priority: 999
-        securitychecker:
+        securitychecker_enlightn:
             lockfile: composer.lock
-            timeout: 30
             run_always: false
             metadata:
                 priority: 999
@@ -83,7 +82,7 @@ grumphp:
     testsuites:
         security:
             tasks:
-                - securitychecker
+                - securitychecker_enlightn
         phpunitbridge:
             tasks:
                 - phpunitbridge
@@ -99,7 +98,7 @@ grumphp:
                 - phplint
                 - phpmd
                 - phpstan
-                - securitychecker
+                - securitychecker_enlightn
         phpcsfixer:
             tasks:
                 - phpcsfixer

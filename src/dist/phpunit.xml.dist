@@ -52,9 +52,11 @@
             <directory>./var</directory>
             <directory>./bin</directory>
             <directory>./migrations</directory>
+            <directory>./src/Infrastructure/Migrations</directory>
             <directory>./src/Migrations</directory>
             <directory>./src/DataFixtures</directory>
             <directory>./src/Entity</directory>
+            <directory>./src/Domain/Entity</directory>
             <directory>./src/DTO</directory>
             <directory>./src/Kernel.php</directory>
             <directory>./src/dist</directory>
