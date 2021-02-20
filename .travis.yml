@@ -15,11 +15,10 @@ before_install:
     - alias composer=composer\ --no-interaction && composer selfupdate
 
 install:
-    - travis_retry composer update --no-progress --profile --no-scripts --no-suggest
+    - travis_retry composer update --no-progress --profile --no-scripts --no-suggest && composer install
 
 script:
     - bin/symfony-grumphp install -q
-    - bin/phpunit
     - vendor/bin/grumphp run
     - bin/symfony-grumphp install -q
     - bin/symfony-grumphp uninstall -q
