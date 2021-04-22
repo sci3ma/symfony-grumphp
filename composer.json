@@ -34,7 +34,6 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/",
             "MH\\SymfonyGrumPHP\\": "src/",
             "MH\\SymfonyGrumPHP\\Tests\\": "tests/"
         }

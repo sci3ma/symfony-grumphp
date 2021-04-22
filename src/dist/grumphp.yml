@@ -109,3 +109,13 @@ grumphp:
             tasks:
                 - shell
                 - clover_coverage
+        no-coverage:
+            tasks:
+                - git_blacklist
+                - phpcpd
+                - phpcsfixer
+                - phplint
+                - phpmd
+                - phpstan
+                - phpunitbridge
+                - securitychecker_enlightn

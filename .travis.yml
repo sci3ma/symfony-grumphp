@@ -19,7 +19,7 @@ install:
 
 script:
     - bin/symfony-grumphp install -q
-    - vendor/bin/grumphp run
+    - vendor/bin/grumphp run --testsuite=no-coverage
     - bin/symfony-grumphp install -q
     - bin/symfony-grumphp uninstall -q
 

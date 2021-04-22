@@ -25,7 +25,7 @@
 * [Enlightn Security Checker](https://github.com/enlightn/security-checker): `enlightn/security-checker`
 
 ## Requirements
-PHP needs to be a minimum version of PHP 7.2.  
+PHP needs to be a minimum version of PHP 7.3.  
 Symfony Framework needs to be a minimum version of Symfony Framework 4.0 or 5.0.
 
 ## Installation
